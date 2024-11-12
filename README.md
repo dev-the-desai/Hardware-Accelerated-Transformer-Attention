@@ -43,9 +43,8 @@ SRAM Interface:
 * Write enable control
 * Read/Write select
 
-Timing behaviour:
 <div align="center">
-<img width="600" alt="config supported" src="https://github.com/user-attachments/assets/184ad84d-f4bf-40ac-ad30-6de5839240a8">
+<img width="600" alt="Timing behaviour" src="https://github.com/user-attachments/assets/184ad84d-f4bf-40ac-ad30-6de5839240a8">
 </div>
 
 
