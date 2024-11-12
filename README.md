@@ -25,6 +25,7 @@ This project implements the core self-attention computation block of a transform
 
 <div align="center">
 <img width="600" alt="Timing behaviour" src="https://github.com/user-attachments/assets/c34a2fde-1647-4e90-b805-aef992457530">
+<img width="600" alt="Timing behaviour" src="https://github.com/user-attachments/assets/23d2da29-916d-4914-b261-22f36f8f72da">
 <p><strong>Figure 1:</strong> Matrices Multpilied </p>
 </div>
 
