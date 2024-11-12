@@ -23,6 +23,11 @@ This project implements the core self-attention computation block of a transform
     * Parameterized matrix dimensions
     * Reset synchronization
 
+<div align="center">
+<img width="600" alt="Timing behaviour" src="https://github.com/user-attachments/assets/c34a2fde-1647-4e90-b805-aef992457530">
+<p><strong>Figure 1:</strong> Matrices Multpilied </p>
+</div>
+
 ## Technical Details
 
 ### Interface Signals
