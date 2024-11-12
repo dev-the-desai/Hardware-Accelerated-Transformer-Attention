@@ -6,7 +6,7 @@ This project implements the core self-attention computation block of a transform
 
 ## Key Implementation Features
 1. Matrix Operations
-    * Input embedding matrix multiplication (I * W_Q, I * W_K, I * W_V)
+    * Input embedding matrix multiplication (I × W<sub>Q</sub>, I * W_K, I * W_V)
     * Key matrix transposition (K^T)
     * Score matrix computation (QK^T)
     * Final attention value calculation (Score * V)
