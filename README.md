@@ -45,8 +45,8 @@ SRAM Interface:
 
 <div align="center">
 <img width="600" alt="Timing behaviour" src="https://github.com/user-attachments/assets/184ad84d-f4bf-40ac-ad30-6de5839240a8">
+<p><strong>Figure 1:</strong> Timing Behavior</p>
 </div>
-
 
 ### Memory Organization
 SRAM Input:
