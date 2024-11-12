@@ -2,14 +2,14 @@
 A SystemVerilog implementation of the Scaled Dot-Product Attention mechanism for transformer neural networks, featuring pipelined matrix multiplication and SRAM-based memory architecture.
 
 ## Project Overview
-This project implements the core self-attention computation block of a transformer neural network in hardware. It performs the complete scaled dot-product attention calculation: (QK^T)V, including the matrix multiplications for generating Query (Q), Key (K), and Value (V) matrices from input embeddings.
+This project implements the core self-attention computation block of a transformer neural network in hardware. It performs the complete scaled dot-product attention calculation: (QK<sup>T</sup>)V, including the matrix multiplications for generating Query (Q), Key (K), and Value (V) matrices from input embeddings.
 
 ## Key Implementation Features
 1. Matrix Operations
     * Input embedding matrix multiplication (I × W<sub>Q</sub>, I × W<sub>K</sub>, I × W<sub>V</sub>)
     * Key matrix transposition (K<sup>T</sup>)
-    * Score matrix computation (QK^T)
-    * Final attention value calculation (Score * V)
+    * Score matrix computation (Q × K<sup>T</sup>)
+    * Final attention value calculation (Score × V)
 
 2. Memory Architecture
     * Three SRAM interfaces (Input, Weight, Result)
@@ -34,9 +34,9 @@ SRAM Input:
 SRAM Weight:
 
 * Address 0x000: Matrix dimensions
-* Address 0x001-0x100: Query weights (W_Q)
-* Address 0x101-0x200: Key weights (W_K)
-* Address 0x201-0x300: Value weights (W_V)
+* Address 0x001-0x100: Query weights (W<sub>Q</sub>)
+* Address 0x101-0x200: Key weights (W<sub>K</sub>)
+* Address 0x201-0x300: Value weights (W<sub>V</sub>)
 
 SRAM Result:
 
