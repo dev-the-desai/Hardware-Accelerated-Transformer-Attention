@@ -25,6 +25,30 @@ This project implements the core self-attention computation block of a transform
 
 ## Technical Details
 
+### Interface Signals
+System Signals:
+
+* clk: System clock
+* reset_n: Active-low reset
+
+Control Signals:
+
+* dut_valid: Input data validity signal
+* dut_ready: Processing ready status
+
+SRAM Interface:
+
+* Read/Write address buses
+* Data input/output buses
+* Write enable control
+* Read/Write select
+
+Timing behaviour:
+<div align="center">
+<img width="600" alt="config supported" src="https://github.com/user-attachments/assets/184ad84d-f4bf-40ac-ad30-6de5839240a8">
+</div>
+
+
 ### Memory Organization
 SRAM Input:
 
@@ -45,24 +69,6 @@ SRAM Result:
 * Address 0x080-0x0BF: Value matrix (V)
 * Address 0x0C0-0x0CF: Score matrix (S)
 * Address 0x0D0-0x10F: Final attention output (Z)
-
-### Interface Signals
-System Signals:
-
-* clk: System clock
-* reset_n: Active-low reset
-
-Control Signals:
-
-* dut_valid: Input data validity signal
-* dut_ready: Processing ready status
-
-SRAM Interface:
-
-* Read/Write address buses
-* Data input/output buses
-* Write enable control
-* Read/Write select
 
 ## Implementation Notes
 * Synchronous reset implementation
