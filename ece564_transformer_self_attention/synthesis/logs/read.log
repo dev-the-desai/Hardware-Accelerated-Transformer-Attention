@@ -1,0 +1,97 @@
+#------------------------------------------------------------
+#
+# Basic Synthesis Script (TCL format)
+#                                  
+# Revision History                
+#   1/15/03  : Author Shane T. Gehring - from class example
+#   2/09/07  : Author Zhengtao Yu      - from class example
+#   12/14/07 : Author Ravi Jenkal      - updated to 180 nm & tcl
+#
+#------------------------------------------------------------
+#---------------------------------------------------------
+# Read in Verilog file and map (synthesize) onto a generic
+# library.
+# MAKE SURE THAT YOU CORRECT ALL WARNINGS THAT APPEAR
+# during the execution of the read command are fixed 
+# or understood to have no impact.
+# ALSO CHECK your latch/flip-flop list for unintended 
+# latches                                            
+#---------------------------------------------------------
+read_verilog -rtl $::env(RTL_FILES)
+Error: Required argument 'file_list' was not found (CMD-007)
+read_sverilog -rtl $::env(RTL_SV_FILES)
+Loading db file '/mnt/coe/workspace/ece/ece720-common/tech/nangate/NangateOpenCellLibrary_PDKv1_2_v2008_10/liberty/520/NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm.db'
+Loading db file '/mnt/apps/public/COE/synopsys_apps/syn/T-2022.03-SP4/libraries/syn/dw_foundation.sldb'
+Loading db file '/mnt/apps/public/COE/synopsys_apps/syn/T-2022.03-SP4/libraries/syn/gtech.db'
+Loading db file '/mnt/apps/public/COE/synopsys_apps/syn/T-2022.03-SP4/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm'
+  Loading link library 'gtech'
+Loading sverilog file '/mnt/ncsudrive/d/ddesai7/nsfhome/564/Project/ece564_transformer_self_attention/rtl/dut.sv'
+Running PRESTO HDLC
+Compiling source file /mnt/ncsudrive/d/ddesai7/nsfhome/564/Project/ece564_transformer_self_attention/rtl/dut.sv
+Opening include file /mnt/ncsudrive/d/ddesai7/nsfhome/564/Project/ece564_transformer_self_attention/rtl/common.vh
+Warning:  /mnt/ncsudrive/d/ddesai7/nsfhome/564/Project/ece564_transformer_self_attention/rtl/dut.sv:110: The construct 'declaration initial assignment' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  /mnt/ncsudrive/d/ddesai7/nsfhome/564/Project/ece564_transformer_self_attention/rtl/dut.sv:111: The construct 'declaration initial assignment' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  /mnt/ncsudrive/d/ddesai7/nsfhome/564/Project/ece564_transformer_self_attention/rtl/dut.sv:114: The construct 'declaration initial assignment' is not supported in synthesis; it is ignored. (VER-708)
+Warning: Could not open default SVF file /mnt/ncsudrive/d/ddesai7/nsfhome/564/Project/ece564_transformer_self_attention/synthesis/svf/default.svf for writing.
+
+Statistics for case statements in always block at line 127 in file
+	'/mnt/ncsudrive/d/ddesai7/nsfhome/564/Project/ece564_transformer_self_attention/rtl/dut.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           144            |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 281 in file
+	'/mnt/ncsudrive/d/ddesai7/nsfhome/564/Project/ece564_transformer_self_attention/rtl/dut.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           289            |     no/auto      |
+===============================================
+
+Inferred memory devices in process
+	in routine MyDesign line 127 in file
+		'/mnt/ncsudrive/d/ddesai7/nsfhome/564/Project/ece564_transformer_self_attention/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    flag_reg_reg     | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|  current_state_reg  | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   row_counter_reg   | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   col_counter_reg   | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   dot_counter_reg   | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  accum_result_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  wait_counter_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  matrix_a_rows_reg  | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  matrix_a_cols_reg  | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  matrix_b_rows_reg  | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  matrix_b_cols_reg  | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 281 in file
+		'/mnt/ncsudrive/d/ddesai7/nsfhome/564/Project/ece564_transformer_self_attention/rtl/dut.sv'.
+=================================================================================================
+|               Register Name               | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================================
+|                S_BASE_reg                 | Latch |  16   |  Y  | N  | N  | N  | -  | -  | -  |
+|   dut__tb__sram_input_read_address_reg    | Latch |  16   |  Y  | N  | N  | N  | -  | -  | -  |
+|   dut__tb__sram_weight_read_address_reg   | Latch |  16   |  Y  | N  | N  | N  | -  | -  | -  |
+|   dut__tb__sram_result_write_enable_reg   | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|  dut__tb__sram_result_write_address_reg   | Latch |  16   |  Y  | N  | N  | N  | -  | -  | -  |
+|    dut__tb__sram_result_write_data_reg    | Latch |  32   |  Y  | N  | N  | N  | -  | -  | -  |
+|                V_BASE_reg                 | Latch |  16   |  Y  | N  | N  | N  | -  | -  | -  |
+|                WV_BASE_reg                | Latch |  16   |  Y  | N  | N  | N  | -  | -  | -  |
+| dut__tb__sram_scratchpad_read_address_reg | Latch |  16   |  Y  | N  | N  | N  | -  | -  | -  |
+|                Z_BASE_reg                 | Latch |  16   |  Y  | N  | N  | N  | -  | -  | -  |
+|                WK_BASE_reg                | Latch |  16   |  Y  | N  | N  | N  | -  | -  | -  |
+|                K_BASE_reg                 | Latch |  16   |  Y  | N  | N  | N  | -  | -  | -  |
+=================================================================================================
+Warning:  /mnt/ncsudrive/d/ddesai7/nsfhome/564/Project/ece564_transformer_self_attention/rtl/dut.sv:281: Netlist for always_comb block contains a latch. (ELAB-974)
+Presto compilation completed successfully.
+Current design is now '/mnt/ncsudrive/d/ddesai7/nsfhome/564/Project/ece564_transformer_self_attention/rtl/MyDesign.db:MyDesign'
+Loaded 1 design.
+Current design is 'MyDesign'.
+MyDesign

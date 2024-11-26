@@ -1,0 +1,154 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 d/mnt/ncsudrive/d/ddesai7/nsfhome/564/Project/ece564_transformer_self_attention/run
+T_opt
+!s110 1731882957
+V24DjSz6`L_`[]mT2?6^;33
+04 6 4 work tb_top fast 0
+=1-000ae431a4f1-673a6fcc-c2629-3021bd
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
+n@_opt
+OE;O;2024.2;79
+vMyDesign
+Z4 2../testbench/testbench.sv|../testbench/sram.sv|../rtl/dut.sv
+Z5 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z6 !s110 1731882951
+!i10b 1
+!s100 >n[JZR[1Mc8M[>RN];gob0
+IE_f>^k:HMB9EAc45FTMT;3
+S1
+R2
+w1731882950
+8../rtl/dut.sv
+F../rtl/dut.sv
+!i122 32
+L0 5 512
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OE;L;2024.2;79
+r1
+!s85 0
+31
+Z9 !s108 1731882950.000000
+Z10 !s107 ../rtl/common/common.vh|../rtl/dut.sv|../testbench/sram.sv|../testbench/testbench.sv|
+Z11 !s90 -sv|+incdir+../rtl/common|../testbench/testbench.sv|../testbench/sram.sv|../rtl/dut.sv|
+!i113 0
+Z12 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 !s92 -sv +incdir+../rtl/common -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+n@my@design
+vsram
+R4
+R5
+R6
+!i10b 1
+!s100 HZj>F?X4LWDI6ePnOV_:42
+I;^>J[_:OnD2[Q4VoXOG6;2
+S1
+R2
+w1731793708
+8../testbench/sram.sv
+F../testbench/sram.sv
+!i122 32
+L0 5 105
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R3
+vtb_top
+R4
+R5
+R6
+!i10b 1
+!s100 ;HU>DJT1ED4b@H_c;2:2h0
+I=n1^Q[XWbeK1Q]_TU;m0U2
+S1
+R2
+w1731814620
+8../testbench/testbench.sv
+F../testbench/testbench.sv
+!i122 32
+L0 21 433
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R3

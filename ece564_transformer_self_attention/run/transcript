@@ -1,0 +1,303 @@
+# vsim -c -voptargs="+acc" tb_top "+TIMEOUT=1000000" "+num_of_testcases=4" "+test_mode=1" "+epsilon_mult=1.0" "+input_dir=../inputs" "+info_level=0" -do "run -all" 
+# Start time: 17:35:56 on Nov 17,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: ../rtl/dut.sv(309): (vopt-2182) 'WK_BASE' might be read before written in always_comb or always @* block.
+# ** Warning: ../rtl/dut.sv(312): (vopt-2182) 'WV_BASE' might be read before written in always_comb or always @* block.
+# ** Warning: ../rtl/dut.sv(333): (vopt-2182) 'K_BASE' might be read before written in always_comb or always @* block.
+# ** Warning: ../rtl/dut.sv(336): (vopt-2182) 'V_BASE' might be read before written in always_comb or always @* block.
+# ** Warning: ../rtl/dut.sv(403): (vopt-2182) 'S_BASE' might be read before written in always_comb or always @* block.
+# ** Warning: ../rtl/dut.sv(456): (vopt-2182) 'Z_BASE' might be read before written in always_comb or always @* block.
+# ** Note: (vopt-143) Recognized 2 FSMs in module "MyDesign(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=7.
+# //  Questa Sim
+# //  Version 2024.2 linux May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.sram(fast)
+# Loading work.sram(fast__1)
+# Loading work.sram(fast__2)
+# Loading work.MyDesign(fast)
+# run -all
+# INFO: number of testcases:           4
+# INFO: DONE WITH RESETING DUT
+# INFO:LVL0: ######## Running Test: 1 ########
+# INFO: Reading memory file: ../inputs/proj_int_test_self_attn_1_input.dat
+# INFO: Reading memory file: ../inputs/proj_int_test_self_attn_1_weight.dat
+# INFO: reading ../inputs/proj_int_test_self_attn_1_result.dat
+# INFO: Dimension of result matrix [          2,           4]
+# ---------------- Checking the Query matrix result------------------  
+# [          0] Result MATCH: expected_result =          45, dut_result =          45
+# [          1] Result MATCH: expected_result =          78, dut_result =          78
+# [          2] Result MATCH: expected_result =          40, dut_result =          40
+# [          3] Result MATCH: expected_result =          58, dut_result =          58
+# [          4] Result MATCH: expected_result =          52, dut_result =          52
+# [          5] Result MATCH: expected_result =          35, dut_result =          35
+# [          6] Result MATCH: expected_result =          22, dut_result =          22
+# [          7] Result MATCH: expected_result =          62, dut_result =          62
+# ---------------- Checking the Key matrix result------------------  
+# [          8] Result MATCH: expected_result =          99, dut_result =          99
+# [          9] Result MATCH: expected_result =          57, dut_result =          57
+# [         10] Result MATCH: expected_result =          46, dut_result =          46
+# [         11] Result MATCH: expected_result =          99, dut_result =          99
+# [         12] Result MATCH: expected_result =          89, dut_result =          89
+# [         13] Result MATCH: expected_result =          65, dut_result =          65
+# [         14] Result MATCH: expected_result =          51, dut_result =          51
+# [         15] Result MATCH: expected_result =          79, dut_result =          79
+# ---------------- Checking the Value matrix result------------------  
+# [         16] Result MATCH: expected_result =          81, dut_result =          81
+# [         17] Result MATCH: expected_result =          89, dut_result =          89
+# [         18] Result MATCH: expected_result =          83, dut_result =          83
+# [         19] Result MATCH: expected_result =          98, dut_result =          98
+# [         20] Result MATCH: expected_result =          89, dut_result =          89
+# [         21] Result MATCH: expected_result =          62, dut_result =          62
+# [         22] Result MATCH: expected_result =          49, dut_result =          49
+# [         23] Result MATCH: expected_result =          88, dut_result =          88
+# ---------------- Checking the Score matrix result------------------  
+# [         24] Result MATCH: expected_result =       16483, dut_result =       16483
+# [         25] Result MATCH: expected_result =       15697, dut_result =       15697
+# [         26] Result MATCH: expected_result =       14293, dut_result =       14293
+# [         27] Result MATCH: expected_result =       12923, dut_result =       12923
+# ---------------- Checking the Attention matrix result------------------  
+# [         28] Result MATCH: expected_result =     2732156, dut_result =     2732156
+# [         29] Result MATCH: expected_result =     2440201, dut_result =     2440201
+# [         30] Result MATCH: expected_result =     2137242, dut_result =     2137242
+# [         31] Result MATCH: expected_result =     2996670, dut_result =     2996670
+# [         32] Result MATCH: expected_result =     2307880, dut_result =     2307880
+# [         33] Result MATCH: expected_result =     2073303, dut_result =     2073303
+# [         34] Result MATCH: expected_result =     1819546, dut_result =     1819546
+# [         35] Result MATCH: expected_result =     2537938, dut_result =     2537938
+# INFO:LVL0: ######## Running Test: 2 ########
+# INFO: Reading memory file: ../inputs/proj_int_test_self_attn_2_input.dat
+# INFO: Reading memory file: ../inputs/proj_int_test_self_attn_2_weight.dat
+# INFO: reading ../inputs/proj_int_test_self_attn_2_result.dat
+# INFO: Dimension of result matrix [          2,           2]
+# ---------------- Checking the Query matrix result------------------  
+# [          0] Result MATCH: expected_result =          46, dut_result =          46
+# [          1] Result MATCH: expected_result =          32, dut_result =          32
+# [          2] Result MATCH: expected_result =          26, dut_result =          26
+# [          3] Result MATCH: expected_result =          39, dut_result =          39
+# ---------------- Checking the Key matrix result------------------  
+# [          4] Result MATCH: expected_result =          59, dut_result =          59
+# [          5] Result MATCH: expected_result =          99, dut_result =          99
+# [          6] Result MATCH: expected_result =          49, dut_result =          49
+# [          7] Result MATCH: expected_result =          74, dut_result =          74
+# ---------------- Checking the Value matrix result------------------  
+# [          8] Result MATCH: expected_result =          90, dut_result =          90
+# [          9] Result MATCH: expected_result =          76, dut_result =          76
+# [         10] Result MATCH: expected_result =         104, dut_result =         104
+# [         11] Result MATCH: expected_result =          52, dut_result =          52
+# ---------------- Checking the Score matrix result------------------  
+# [         12] Result MATCH: expected_result =        5882, dut_result =        5882
+# [         13] Result MATCH: expected_result =        4622, dut_result =        4622
+# [         14] Result MATCH: expected_result =        5395, dut_result =        5395
+# [         15] Result MATCH: expected_result =        4160, dut_result =        4160
+# ---------------- Checking the Attention matrix result------------------  
+# [         16] Result MATCH: expected_result =     1010068, dut_result =     1010068
+# [         17] Result MATCH: expected_result =      687376, dut_result =      687376
+# [         18] Result MATCH: expected_result =      918190, dut_result =      918190
+# [         19] Result MATCH: expected_result =      626340, dut_result =      626340
+# INFO:LVL0: ######## Running Test: 3 ########
+# INFO: Reading memory file: ../inputs/proj_int_test_self_attn_3_input.dat
+# INFO: Reading memory file: ../inputs/proj_int_test_self_attn_3_weight.dat
+# INFO: reading ../inputs/proj_int_test_self_attn_3_result.dat
+# INFO: Dimension of result matrix [          8,           2]
+# ---------------- Checking the Query matrix result------------------  
+# [          0] Result MATCH: expected_result =          57, dut_result =          57
+# [          1] Result MATCH: expected_result =          84, dut_result =          84
+# [          2] Result MATCH: expected_result =          51, dut_result =          51
+# [          3] Result MATCH: expected_result =          90, dut_result =          90
+# [          4] Result MATCH: expected_result =          24, dut_result =          24
+# [          5] Result MATCH: expected_result =          33, dut_result =          33
+# [          6] Result MATCH: expected_result =          46, dut_result =          46
+# [          7] Result MATCH: expected_result =          45, dut_result =          45
+# [          8] Result MATCH: expected_result =          49, dut_result =          49
+# [          9] Result MATCH: expected_result =         111, dut_result =         111
+# [         10] Result MATCH: expected_result =          68, dut_result =          68
+# [         11] Result MATCH: expected_result =         120, dut_result =         120
+# [         12] Result MATCH: expected_result =         101, dut_result =         101
+# [         13] Result MATCH: expected_result =          96, dut_result =          96
+# [         14] Result MATCH: expected_result =          63, dut_result =          63
+# [         15] Result MATCH: expected_result =         108, dut_result =         108
+# ---------------- Checking the Key matrix result------------------  
+# [         16] Result MATCH: expected_result =          87, dut_result =          87
+# [         17] Result MATCH: expected_result =          66, dut_result =          66
+# [         18] Result MATCH: expected_result =          78, dut_result =          78
+# [         19] Result MATCH: expected_result =          62, dut_result =          62
+# [         20] Result MATCH: expected_result =          30, dut_result =          30
+# [         21] Result MATCH: expected_result =          43, dut_result =          43
+# [         22] Result MATCH: expected_result =          52, dut_result =          52
+# [         23] Result MATCH: expected_result =          59, dut_result =          59
+# [         24] Result MATCH: expected_result =          85, dut_result =          85
+# [         25] Result MATCH: expected_result =          83, dut_result =          83
+# [         26] Result MATCH: expected_result =         101, dut_result =         101
+# [         27] Result MATCH: expected_result =         102, dut_result =         102
+# [         28] Result MATCH: expected_result =         128, dut_result =         128
+# [         29] Result MATCH: expected_result =          92, dut_result =          92
+# [         30] Result MATCH: expected_result =          90, dut_result =          90
+# [         31] Result MATCH: expected_result =         100, dut_result =         100
+# ---------------- Checking the Value matrix result------------------  
+# [         32] Result MATCH: expected_result =          66, dut_result =          66
+# [         33] Result MATCH: expected_result =          96, dut_result =          96
+# [         34] Result MATCH: expected_result =          81, dut_result =          81
+# [         35] Result MATCH: expected_result =         103, dut_result =         103
+# [         36] Result MATCH: expected_result =          51, dut_result =          51
+# [         37] Result MATCH: expected_result =          42, dut_result =          42
+# [         38] Result MATCH: expected_result =          74, dut_result =          74
+# [         39] Result MATCH: expected_result =          69, dut_result =          69
+# [         40] Result MATCH: expected_result =          98, dut_result =          98
+# [         41] Result MATCH: expected_result =         113, dut_result =         113
+# [         42] Result MATCH: expected_result =         127, dut_result =         127
+# [         43] Result MATCH: expected_result =         137, dut_result =         137
+# [         44] Result MATCH: expected_result =         100, dut_result =         100
+# [         45] Result MATCH: expected_result =         140, dut_result =         140
+# [         46] Result MATCH: expected_result =         126, dut_result =         126
+# [         47] Result MATCH: expected_result =         126, dut_result =         126
+# ---------------- Checking the Score matrix result------------------  
+# [         48] Result MATCH: expected_result =       10503, dut_result =       10503
+# [         49] Result MATCH: expected_result =        9654, dut_result =        9654
+# [         50] Result MATCH: expected_result =        5322, dut_result =        5322
+# [         51] Result MATCH: expected_result =        7920, dut_result =        7920
+# [         52] Result MATCH: expected_result =       11817, dut_result =       11817
+# [         53] Result MATCH: expected_result =       14325, dut_result =       14325
+# [         54] Result MATCH: expected_result =       15024, dut_result =       15024
+# [         55] Result MATCH: expected_result =       13530, dut_result =       13530
+# [         56] Result MATCH: expected_result =       10377, dut_result =       10377
+# [         57] Result MATCH: expected_result =        9558, dut_result =        9558
+# [         58] Result MATCH: expected_result =        5400, dut_result =        5400
+# [         59] Result MATCH: expected_result =        7962, dut_result =        7962
+# [         60] Result MATCH: expected_result =       11805, dut_result =       11805
+# [         61] Result MATCH: expected_result =       14331, dut_result =       14331
+# [         62] Result MATCH: expected_result =       14808, dut_result =       14808
+# [         63] Result MATCH: expected_result =       13590, dut_result =       13590
+# [         64] Result MATCH: expected_result =        4266, dut_result =        4266
+# [         65] Result MATCH: expected_result =        3918, dut_result =        3918
+# [         66] Result MATCH: expected_result =        2139, dut_result =        2139
+# [         67] Result MATCH: expected_result =        3195, dut_result =        3195
+# [         68] Result MATCH: expected_result =        4779, dut_result =        4779
+# [         69] Result MATCH: expected_result =        5790, dut_result =        5790
+# [         70] Result MATCH: expected_result =        6108, dut_result =        6108
+# [         71] Result MATCH: expected_result =        5460, dut_result =        5460
+# [         72] Result MATCH: expected_result =        6972, dut_result =        6972
+# [         73] Result MATCH: expected_result =        6378, dut_result =        6378
+# [         74] Result MATCH: expected_result =        3315, dut_result =        3315
+# [         75] Result MATCH: expected_result =        5047, dut_result =        5047
+# [         76] Result MATCH: expected_result =        7645, dut_result =        7645
+# [         77] Result MATCH: expected_result =        9236, dut_result =        9236
+# [         78] Result MATCH: expected_result =       10028, dut_result =       10028
+# [         79] Result MATCH: expected_result =        8640, dut_result =        8640
+# [         80] Result MATCH: expected_result =       11589, dut_result =       11589
+# [         81] Result MATCH: expected_result =       10704, dut_result =       10704
+# [         82] Result MATCH: expected_result =        6243, dut_result =        6243
+# [         83] Result MATCH: expected_result =        9097, dut_result =        9097
+# [         84] Result MATCH: expected_result =       13378, dut_result =       13378
+# [         85] Result MATCH: expected_result =       16271, dut_result =       16271
+# [         86] Result MATCH: expected_result =       16484, dut_result =       16484
+# [         87] Result MATCH: expected_result =       15510, dut_result =       15510
+# [         88] Result MATCH: expected_result =       13836, dut_result =       13836
+# [         89] Result MATCH: expected_result =       12744, dut_result =       12744
+# [         90] Result MATCH: expected_result =        7200, dut_result =        7200
+# [         91] Result MATCH: expected_result =       10616, dut_result =       10616
+# [         92] Result MATCH: expected_result =       15740, dut_result =       15740
+# [         93] Result MATCH: expected_result =       19108, dut_result =       19108
+# [         94] Result MATCH: expected_result =       19744, dut_result =       19744
+# [         95] Result MATCH: expected_result =       18120, dut_result =       18120
+# [         96] Result MATCH: expected_result =       15123, dut_result =       15123
+# [         97] Result MATCH: expected_result =       13830, dut_result =       13830
+# [         98] Result MATCH: expected_result =        7158, dut_result =        7158
+# [         99] Result MATCH: expected_result =       10916, dut_result =       10916
+# [        100] Result MATCH: expected_result =       16553, dut_result =       16553
+# [        101] Result MATCH: expected_result =       19993, dut_result =       19993
+# [        102] Result MATCH: expected_result =       21760, dut_result =       21760
+# [        103] Result MATCH: expected_result =       18690, dut_result =       18690
+# [        104] Result MATCH: expected_result =       12609, dut_result =       12609
+# [        105] Result MATCH: expected_result =       11610, dut_result =       11610
+# [        106] Result MATCH: expected_result =        6534, dut_result =        6534
+# [        107] Result MATCH: expected_result =        9648, dut_result =        9648
+# [        108] Result MATCH: expected_result =       14319, dut_result =       14319
+# [        109] Result MATCH: expected_result =       17379, dut_result =       17379
+# [        110] Result MATCH: expected_result =       18000, dut_result =       18000
+# [        111] Result MATCH: expected_result =       16470, dut_result =       16470
+# ---------------- Checking the Attention matrix result------------------  
+# [        112] Result MATCH: expected_result =     8517195, dut_result =     8517195
+# [        113] Result MATCH: expected_result =     9878640, dut_result =     9878640
+# [        114] Result MATCH: expected_result =     8493735, dut_result =     8493735
+# [        115] Result MATCH: expected_result =     9839616, dut_result =     9839616
+# [        116] Result MATCH: expected_result =     3446865, dut_result =     3446865
+# [        117] Result MATCH: expected_result =     3999720, dut_result =     3999720
+# [        118] Result MATCH: expected_result =     5532935, dut_result =     5532935
+# [        119] Result MATCH: expected_result =     6435496, dut_result =     6435496
+# [        120] Result MATCH: expected_result =     9603590, dut_result =     9603590
+# [        121] Result MATCH: expected_result =    11107816, dut_result =    11107816
+# [        122] Result MATCH: expected_result =    11324980, dut_result =    11324980
+# [        123] Result MATCH: expected_result =    13119488, dut_result =    13119488
+# [        124] Result MATCH: expected_result =    11983435, dut_result =    11983435
+# [        125] Result MATCH: expected_result =    13941008, dut_result =    13941008
+# [        126] Result MATCH: expected_result =    10305405, dut_result =    10305405
+# [        127] Result MATCH: expected_result =    11940624, dut_result =    11940624
+# INFO:LVL0: ######## Running Test: 4 ########
+# INFO: Reading memory file: ../inputs/proj_int_test_self_attn_4_input.dat
+# INFO: Reading memory file: ../inputs/proj_int_test_self_attn_4_weight.dat
+# INFO: reading ../inputs/proj_int_test_self_attn_4_result.dat
+# INFO: Dimension of result matrix [          1,           8]
+# ---------------- Checking the Query matrix result------------------  
+# [          0] Result MATCH: expected_result =          72, dut_result =          72
+# [          1] Result MATCH: expected_result =          94, dut_result =          94
+# [          2] Result MATCH: expected_result =          34, dut_result =          34
+# [          3] Result MATCH: expected_result =          65, dut_result =          65
+# [          4] Result MATCH: expected_result =          89, dut_result =          89
+# [          5] Result MATCH: expected_result =          40, dut_result =          40
+# [          6] Result MATCH: expected_result =          75, dut_result =          75
+# [          7] Result MATCH: expected_result =          67, dut_result =          67
+# ---------------- Checking the Key matrix result------------------  
+# [          8] Result MATCH: expected_result =          51, dut_result =          51
+# [          9] Result MATCH: expected_result =          76, dut_result =          76
+# [         10] Result MATCH: expected_result =          70, dut_result =          70
+# [         11] Result MATCH: expected_result =          63, dut_result =          63
+# [         12] Result MATCH: expected_result =          73, dut_result =          73
+# [         13] Result MATCH: expected_result =         114, dut_result =         114
+# [         14] Result MATCH: expected_result =          54, dut_result =          54
+# [         15] Result MATCH: expected_result =          74, dut_result =          74
+# ---------------- Checking the Value matrix result------------------  
+# [         16] Result MATCH: expected_result =          67, dut_result =          67
+# [         17] Result MATCH: expected_result =          79, dut_result =          79
+# [         18] Result MATCH: expected_result =          81, dut_result =          81
+# [         19] Result MATCH: expected_result =          75, dut_result =          75
+# [         20] Result MATCH: expected_result =          43, dut_result =          43
+# [         21] Result MATCH: expected_result =          44, dut_result =          44
+# [         22] Result MATCH: expected_result =          83, dut_result =          83
+# [         23] Result MATCH: expected_result =         106, dut_result =         106
+# ---------------- Checking the Score matrix result------------------  
+# [         24] Result MATCH: expected_result =       37356, dut_result =       37356
+# ---------------- Checking the Attention matrix result------------------  
+# [         25] Result MATCH: expected_result =     2502852, dut_result =     2502852
+# [         26] Result MATCH: expected_result =     2951124, dut_result =     2951124
+# [         27] Result MATCH: expected_result =     3025836, dut_result =     3025836
+# [         28] Result MATCH: expected_result =     2801700, dut_result =     2801700
+# [         29] Result MATCH: expected_result =     1606308, dut_result =     1606308
+# [         30] Result MATCH: expected_result =     1643664, dut_result =     1643664
+# [         31] Result MATCH: expected_result =     3100548, dut_result =     3100548
+# [         32] Result MATCH: expected_result =     3959736, dut_result =     3959736
+# ------------------------------------------------------------------------ 
+# INFO: Total number of cases       : 4
+# INFO: Total number of result pass : 217 / 217
+# INFO: Final pass percentage       : 100.00
+# INFO: Final Time Result           : 38024 ns
+# INFO: Final Cycle Result          : 5633 cycles
+# 
+# ** Note: $finish    : ../testbench/testbench.sv(451)
+#    Time: 39060 ns  Iteration: 1  Instance: /tb_top
+# End time: 17:35:59 on Nov 17,2024, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 7
